@@ -11,7 +11,7 @@ export default function App() {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  const optionLabels = ['good', 'neutral', 'bad'];
+  const optionLabels = Object.keys({ good, neutral, bad });
 
   const leaveFeedback = option => {
     if (option === 'good') {
